@@ -119,7 +119,7 @@ Link:
 	run, https://github.com/rlychilplr/school--project--thing/
 
 
-; app closes properly
+; app closes properly, this is needed bc otherwise the app is still running in the background
 ; ------------------------------------------------------------------------------------------------------------------------------------------------------
 GuiClose:
 	ExitApp,
