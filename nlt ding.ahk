@@ -4,6 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; <-- if you see one of these it means the rest of the text on a line is a note and the program will ignore it
+; this can be usefull to seperate different parts of the program (only inside the code) like different gui's or just note what something is supposed to do
 	
 ; begin
 ; ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 		Gui, Font, s9
 			Gui, Add, Text, x500 y30, aan het einde leg ik meer uit
 		Gui, Add, Pic, x--250 y0, pics\blood.png
-			Gui, Add, Button, x0 y45 w200 h30 gLets_start, begin
+			Gui, Add, Button, x0 y470 w200 h30 gLets_start, begin
 	}
 return
 
@@ -77,11 +78,15 @@ return
 Aderen:
 	{
 	Gui, Destroy
-	Gui, Font, s15
+	Gui, Font, s7
 	Gui, Color, White
 	Gui, +alwaysontop
 	Gui, Show, w1023 h486
-		Gui, Add, Pic, x0 y0, pics\rsz_bloed_verdeling.png
+			
+			Gui, Add, Text, x2 y0, (dit is zelf gemaakt want ik kon er 
+			Gui, Add, Text, x2 y12, geen vinden met een goede resolutie)
+		Gui, Add, Pic, x0 y0, pics\rsz_bloed_verdeling.jpg
+	Gui, Font, s15
 			Gui, Add, Text, x2 y346, hierboven is te zien hoe het bloed zich door de aderen heen beweegt,
 			Gui, Add, Text, x2 y366, vanaf de aorta splitst het bloed op in de slagaders en van de slagaders weer in de slagadertjes
 			Gui, Add, Text, x2 y386, van daar splitst het op in haarvaten. onthoud dat in elke deel evenveel bloed zit, er zijn dan wel minder
